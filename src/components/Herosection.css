@@ -1,0 +1,61 @@
+/* src/components/HeroSection.css */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: url("./bg.jpg") no-repeat center center/cover;
+}
+
+.hero-content {
+  text-align: center;
+  /* color: #ffffff; */
+}
+
+.ncb-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the Cryptocurrency Icons */
+.crypto-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.crypto-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.crypto-icon:hover {
+  transform: scale(1.2);
+}
