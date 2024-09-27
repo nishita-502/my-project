@@ -46,6 +46,7 @@ const WalletAddressChart = () => {
 
   return (
     <div className="chart-container">
+      <h2 className="graph-heading">Real-Time Monitoring Graph</h2>
       <ResponsiveContainer width="100%" height={500}>
         <BarChart
           data={data}

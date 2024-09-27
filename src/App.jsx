@@ -1,16 +1,24 @@
 // src/App.jsx
 import React from "react";
-import HeroSection from "./components/Herosection";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HeroSection from "./components/Herosection.jsx";
 import WalletAddressChart from "./components/WalletAddressChart";
+import Insert from "./components/insert.jsx";  // Explicit extension
 import "../src/App.css"; // Import App-wide CSS
 
 const App = () => {
   return (
+    
+    <Router>
     <div className="app-container">
-      <HeroSection /> {/* Hero section */}
-      <h2 className="graph-heading">Real-Time Monitoring Graph</h2>
-      <WalletAddressChart /> {/* Wallet Address Chart */}
+    <Routes>
+    <Route path="/" element={<HeroSection/>} /> {/* Hero section */}
+      
+      <Route path="/wallet" element={<WalletAddressChart />} /> {/* Wallet Address Chart */}
+      <Route path="/insert" element={<Insert />} />  {/* Insert the ClonePage component */}
+      </Routes>
     </div>
+    </Router>
   );
 };
 
